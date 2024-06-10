@@ -1,4 +1,3 @@
-console.log(document.getElementById("btn-avancar"));
 const btnAvancar = document.getElementById("btn-avancar");
 const btnVoltar = document.getElementById("btn-voltar")
 let cartaoAtual = 0
@@ -8,12 +7,10 @@ btnAvancar.addEventListener("click", function () {
     const ehUltimoCartao = cartaoAtual === cartoes.length - 1;
     if (ehUltimoCartao) return;
 
-
     escondercartaoselecionado();
 
     cartaoAtual++;
     mostrarcartao();
-
 });
 
 btnVoltar.addEventListener("click", function () {
@@ -24,7 +21,6 @@ btnVoltar.addEventListener("click", function () {
 
     cartaoAtual--;
     mostrarcartao();
-
 });
 
 function mostrarcartao() {
